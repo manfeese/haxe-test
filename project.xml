@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="tabs" package="tabs" version="1.0.0" company="" />
+	
+	<!-- output -->
+	<app main="Main" file="tabs" path="bin" />
+	
+	<window width="800" height="480" unless="mobile" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	
+	<haxelib name="haxeui-core" />
+	<haxelib name="haxeui-openfl" />
+	
+	<!-- assets -->
+	<icon path="assets/openfl.svg" />
+	<assets path="assets/img" rename="img" />
+	<assets path="assets/xml" rename="xml" />
+	
+	<!--<haxeflag name="-dce full" />-->
+	
+</project>
